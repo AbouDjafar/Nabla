@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html data-ng-app = "nabla">
+
+<head>
+    <script type="text/javascript">
+      function chargement(){
+        setTimeout(function () {
+          document.getElementById('loader').style.width = "0%";
+          document.getElementById('loader').style.height = "0%";
+          document.getElementById('loader').style.zIndex = "-10";
+          document.getElementById('loader').style.display = "none";
+        }, 1000);
+      };
+    </script>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/profil.css" />
+    <title>profil du joueur</title>
+</head>
+
+<body onload="chargement()">
+  <nav class='flow-text center'>Profil du joueur</nav>
+  <div id="loader" style="width:100%; height:100%; background-color:white; position:fixed; top:0px; left:0px; z-index:100;">
+    <span class="msg flow-text" style="position: absolute; top:72%; left:40%">Chargement...</span>
+    <div class="progress" style="position:relative; top:80%; left:0px; width:100%">
+      <div class="indeterminate"></div>
+    </div>
+  </div>
+  <div id="rideau">
+  </div>
+  <div id="inscription" class="input-field">
+    <span class="center flow-text">Modification</span><br/>
+    <form>
+      <input id="user_name" type="text" class="" placeholder="Veuillez saisir votre nouveau nom" />
+      <input type="button" onclick="enreg()" value="Valider" class="btn-large waves-effect waves-light"/>
+  </form>
+  </div>
+  <div id="rideau">
+  </div>
+
+  <div id="groupe" class="center" data-ng-controller = "infos">
+    <span class="flow-text">{{ userName }}</span>
+    <span> Score total: {{ userScore }} points</span><br/>
+    <span class="bord"> Niveau: {{ userLevel }}</span><br/>
+    <span> Nombre de parties jouées: {{ tentatives }}</span><br/>
+    <span class="vic"> Victoires: {{ victories }}</span><br/>
+    <span class="los"> Echecs: {{ loses }}</span><br/>
+    <span> Votre ratio victoires/echec est de {{ ratio }}... {{ avis }}</span>
+  </div>
+
+        <!-- Scripts JS -->
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jQuery_UI_Touch_Punch.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/profil.js"></script>
+</body>
+
+</html>

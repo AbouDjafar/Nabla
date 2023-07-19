@@ -1,0 +1,199 @@
+body{
+  width:100%;
+  height: 100%;
+}
+#nab{
+  z-index: 10;
+  position: fixed;
+  top: 135%;
+  left: 75%;
+  width: 15%;
+  height: 65%;
+  -webkit-transition: top 2s linear;
+}
+span#nab_msg{
+  font-size: 0.9em;
+  display: block;
+  width: 100%;
+  height: 15%;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: solid gray 1.5px;
+  text-align: center;
+  position: fixed;
+  top: 185%;
+  left: 0;
+  overflow-y: auto;
+  padding: 2%;
+  z-index: 40;
+  -webkit-transition: top 3s linear;
+}
+div#horloge{
+  border-top: 0px;
+  color: white;
+  background-color: #26a69a;
+  border-radius: 0px 0px 5px 5px;
+  position: fixed;
+  top: -30px;
+  left: 48%;
+  width: 5.5em;
+  height: 1.8em;
+  text-align: center;
+  -webkit-transition: top 1s linear;
+}
+div#horloge::before{
+  content: "";
+  background-image: url("icons/ic_watch_later_white_18dp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-left: 2px;
+}
+div#question{
+  width: 55%;
+  height: 30%;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  word-wrap: break-word;
+}
+img#bb{
+  z-index: -1;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: 60%;
+  height: 45%;
+}
+a#boost{
+  width: 80px;
+  height: 80px;
+  padding: 0.9em;
+  position: absolute;
+  top: 5%;
+  left: 90%;
+}
+ul.panier{
+  width: 100%;
+  background-color: gray;
+  height: 300px;
+  position: fixed;
+  top: 60%;
+  left: 0%;
+}
+#sortable2 div{
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+}
+li.piece{
+  width: 300px;
+  height: 70px;
+  margin: 2%;
+  padding: 10px;
+}
+
+#notif{
+  z-index: 30;
+  display: block;
+  width: 60%;
+  height: auto;
+  background-color: #26a69a;
+  padding: 10% 0% 10% 0%;
+  border-radius: 10px;
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 20%;
+}
+#notif .corps{
+  padding: 5%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+#notif .corps .recap input[type='button']{
+  margin-right: 10%;
+  padding: 2% 5% 2% 5%;
+  width: 40%;
+}
+#notif .msg{
+  display: block;
+  width: 100%;
+  font-size: 1.5em;
+}
+#rideau{
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 20;
+  background-color: black;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+#msglvl{
+  width: 50%;
+  height: 20%;
+  position: fixed;
+  top: 40%;
+  left: 25%;
+  z-index: 100;
+  color: #edaf24;
+  display: none;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+}
+#imglvl{
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  top: -10%;
+  left: 20%;
+  z-index: 90;
+  display: none;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes bond{
+  0% {-webkit-transform: scale(0.5);}
+  50% {-webkit-transform: scale(1.5);}
+  100% {-webkit-transform: scale(1);}
+}
+@-webkit-keyframes popout{
+  0% {-webkit-transform: scale(0.1)}
+  100% {-webkit-transform: scale(1)}
+}
+
+
+/* Partie du responsive Responsive */
+@media only screen and (max-width:600px){
+  #question{
+    font-size: 0.7em;
+  }
+  li.piece{
+    width: 45%;
+    font-size: 0.6em;
+  }
+  ul.panier{
+    height: 200px;
+    position: absolute;
+  }
+  #sortable2 div{
+    margin-left: 3%;
+  }
+  a#boost{
+    left: 83%;
+  }
+}
+@media only screen and (max-width:800px){
+
+}

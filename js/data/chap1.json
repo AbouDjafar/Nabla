@@ -1,0 +1,5 @@
+[{
+  "question" : "Dans un triangle ABC rectangle en B, le Theoreme de Pythagore stipule que le carre de l'hypothenuse AC est egal a",
+  "reponse" : "$$AC^2=AB^2+BC^2$$",
+  "elements" : ["$$AC^2$$", "$$AB^2$$", "$$BC^2$$"]
+}]

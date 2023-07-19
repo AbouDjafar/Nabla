@@ -1,0 +1,133 @@
+body{
+/*background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+#rideau{
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 20;
+  background-color: black;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+div#inscription{
+  width: 40%;
+  height: 60%;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  z-index: -2;
+  display: none;
+  background-color: white;
+  -webkit-border-radius: 5px;
+}
+#inscription span{
+  display: block;
+  width: 100%;
+  height: 30%;
+  margin-top: 5%;
+  margin-top: 5%;
+}
+#inscription .btn-large{
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  width: 100%;
+  height: 30%;
+  -webkit-border-radius: 0px 0px 5px 5px;
+}
+#inscription input[type='text']{
+  margin: 0% 5% 0% 5%;
+  width: 90%;
+  height: 30%;
+}
+#inscription input.waves-button-input{
+  color: white;
+}
+nav{
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #c05171;
+}
+nav img{
+  float: left;
+  height: 60%;
+  margin-top: 1.5%;
+  margin-left: 1%;
+}
+#nab{
+  z-index: 10;
+  position: absolute;
+  top: 35%;
+  left: 75%;
+  width: 15%;
+  height: 65%;
+}
+#rideau{
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 20;
+  background-color: black;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+#groupe{
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  padding: 0% 10% 10% 10%;
+  background-color: black;
+  color: white;
+  z-index: 5;
+}
+img.entete{
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  z-index: 5;
+}
+#groupe span.flow-text{
+  border-bottom: solid #d5734c 1px;
+  width: 100%;
+  color: #d5734c;
+  display: block;
+}
+span.flow-text img{
+  float: right;
+  width: 5%;
+  height: 5%;
+}
+span.vic{
+  color: #29B6F6;
+}
+span.los{
+  color: #F06292;
+}
+#groupe span.bord{
+  border-bottom: solid #d5734c 1px;
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width:600px){
+  span.flow-text img{
+    width: 10%;
+    height: 9%;
+  }
+}

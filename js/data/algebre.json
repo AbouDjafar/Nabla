@@ -1,0 +1,54 @@
+[
+  {
+    "chapitre": "Les ensembles",
+    "contenu": [
+      {
+        "question": "$$Informellement,\\:un\\:ensemble\\:est\\::$$",
+        "reponse": "$$une\\:collection\\:d'elements$$",
+        "elements": ["$$une\\:collection\\:d'elements$$", "$$un\\:collection\\:ordonnee\\:de\\:chiffres$$"],
+        "type": "qcm",
+        "etat": "lock"
+      },
+      {
+        "question": "$$L'ensemble \\:E \\:est \\:inclue \\:dans \\:l'ensemble \\:F \\:si $$",
+        "reponse": "$$\\forall x \\in E, x \\in F$$",
+        "elements": ["$$\\forall$$", "$$\\:x$$", "$$\\:E$$", "$$\\in$$", "$$\\:x$$", "$$\\:,$$", "$$\\in$$", "$$\\:F$$"],
+        "type": "dnd",
+        "etat": "lock"
+      },
+      {
+        "question": "$$Le\\: produit\\: cartesien,\\: note\\: E*F,\\: est\\: l'ensemble\\: des\\: couples\\: (x,y)\\: où $$",
+        "reponse": "$$x\\in E\\;et\\;y\\in F$$",
+        "elements": ["$$x*y\\;est\\;vrai$$", "$$(x,y) \\in E$$", "$$(x,y)\\in F$$", "$$x\\in E\\;et\\;y\\in F$$"],
+        "type": "qcm",
+        "etat": "lock"
+      }
+    ]
+  },
+  {
+    "chapitre": "Applications lineaires",
+    "contenu": [
+      {
+        "question": "$$Une\\: application\\: est\\: une\\: fonction$$",
+        "reponse": "$$vrai$$",
+        "elements": ["$$vrai$$", "$$faux$$"],
+        "type": "qcm",
+        "etat": "lock"
+      },
+      {
+        "question": "$$Soit\\: A \\subset E \\: et\\: f: \\: E \\rightarrow F,\\: l'image\\: directe\\: de \\: A\\: par\\: f\\: est\\: l'ensemble$$",
+        "reponse": "$$f(A) = {f(x) \\mid \\:x \\in A}$$",
+        "elements": ["$${\\:$$", "$$f(A)$$", "$$\\:f(x)$$", "$$\\:}$$", "$$\\mid$$", "$$\\in$$", "$$\\:x$$", "$$\\:A$$", "$$\\in$$", "$$=$$"],
+        "type": "dnd",
+        "etat": "lock"
+      },
+      {
+        "question": "$$$$",
+        "reponse": "$$$$",
+        "elements": [],
+        "type": "",
+        "etat": "lock"
+      }
+    ]
+  }
+]

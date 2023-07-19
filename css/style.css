@@ -1,0 +1,279 @@
+body{
+  width:100%;
+  height: 100%;
+}
+div#horloge{
+  border-top: 0px;
+  color: white;
+  background-color: #26a69a;
+  border-radius: 0px 0px 5px 5px;
+  position: fixed;
+  top: -30px;
+  left: 48%;
+  width: 5.5em;
+  height: 1.8em;
+  text-align: center;
+  -webkit-transition: top 1s linear;
+}
+div#horloge::before{
+  content: "";
+  background-image: url("icons/ic_watch_later_white_18dp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-left: 2px;
+}
+#tableau{
+  width: 60%;
+  height: 40%;
+  position: fixed;
+  top: 2%;
+  left: 20%;
+  z-index: -1;
+}
+div#question{
+  width: 50%;
+  height: auto;
+  max-height: 35%
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: medium;
+  text-transform: none;
+  position: fixed;
+  top: 2%;
+  left: 25%;
+  color: white;
+}
+div#g1{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+a#checkeur, a#validateur{
+  float: right;
+  margin-top: 0.8%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 1%;
+}
+a#checkeur{
+  background-image: url("icons/ic_visibility_white_36dp.png");
+}
+a#validateur{
+  background-image: url("icons/ic_thumb_up_white_36dp.png");
+  display: none;
+}
+#MathOutput{
+  float: right;
+}
+#imglvl{
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  top: -10%;
+  left: 20%;
+  z-index: 90;
+  display: none;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+}
+#msglvl{
+  width: 50%;
+  height: 20%;
+  position: fixed;
+  top: 40%;
+  left: 25%;
+  z-index: 100;
+  color: #edaf24;
+  display: none;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+}
+#nab{
+  z-index: 10;
+  position: fixed;
+  top: 135%;
+  left: 75%;
+  width: 15%;
+  height: 65%;
+  -webkit-transition: top 2s linear;
+}
+span#nab_msg{
+  font-size: 0.9em;
+  display: block;
+  width: 100%;
+  height: 15%;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: solid gray 1.5px;
+  text-align: center;
+  position: fixed;
+  top: 185%;
+  left: 0;
+  padding: 2%;
+  overflow-y: scroll;
+  z-index: 40;
+  -webkit-transition: top 3s linear;
+}
+
+ul.reponse{
+  float: left;
+}
+div#box{
+  width: 20em;
+  height: auto;
+  float: left;
+}
+a#boost{
+  width: 80px;
+  height: 80px;
+  padding: 0.9em;
+  position: absolute;
+  top: 5%;
+  left: 80%;
+}
+a#operateurs{
+  width: 70px;
+  height: 70px;
+  padding: 0.9em;
+  position: absolute;
+  top: 55%;
+  left: 91.5%;
+  background-image: url("icons/ic_add_box_white_36dp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ul#op_comp{
+  width: auto;
+  height: auto;
+  display: none;
+  position: absolute;
+  top: 115px;
+  right: 0px;
+}
+ul#op_comp li{
+  display: inline-block;
+}
+ul.connectedSortable{
+  display:block;
+  width: 700px;
+  height: 60px;
+  border: solid green 1px;
+  border-radius: 5px;
+}
+ul.panier{
+  width: 100%;
+  background-color: gray;
+  height: 200px;
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  border: none;
+  border-radius: 0px;
+}
+ul.panier p{
+  display: block;
+  width: 60%;
+  height: auto;
+  float: left;
+}
+li.piece{
+  width: 70px;
+  height: 60px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  padding: 0px;
+}
+ul#sortable{
+  width: 85%;
+}
+
+#notif{
+  z-index: 30;
+  display: block;
+  width: 60%;
+  height: auto;
+  background-color: #26a69a;
+  padding: 10% 0% 10% 0%;
+  border-radius: 10px;
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 20%;
+}
+#notif .corps{
+  padding: 5%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+#notif .corps .recap input[type='button']{
+  margin-right: 10%;
+  padding: 2% 5% 2% 5%;
+  width: 40%;
+}
+#notif .msg{
+  display: block;
+  width: 100%;
+  font-size: 1.5em;
+}
+#rideau{
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 20;
+  background-color: black;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+@-webkit-keyframes bond{
+  0% {-webkit-transform: scale(0.5);}
+  50% {-webkit-transform: scale(1.5);}
+  100% {-webkit-transform: scale(1);}
+}
+@-webkit-keyframes popout{
+  0% {-webkit-transform: scale(0.1)}
+  100% {-webkit-transform: scale(1)}
+}
+
+
+/* Partie du responsive Responsive */
+@media only screen and (max-width:600px){
+
+}
+@media only screen and (max-width:800px){
+  ul.panier{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+  }
+  #question.flow-text{
+    margin-top: 1%;
+    font-size: 0.9em;
+  }
+  a#boost{
+    position: absolute;
+    top: 5%;
+    left: 85%;
+  }
+  a#operateurs{
+    position: absolute;
+    top: 55%;
+    left: 85.5%;
+  }
+/*  a#checkeur, a#validateur{
+    margin-top: 2%;
+  }*/
+  ul#sortable{
+    width: 80%;
+  }
+}

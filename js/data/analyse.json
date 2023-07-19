@@ -1,0 +1,106 @@
+[
+  {
+    "chapitre": "Le corps des nombres reels",
+    "contenu": [
+    {
+      "question": "$$Sur\\: \\mathbb{R} \\:une \\:relation \\:est \\:dite \\:d'ordre \\:lorsqu'elle \\:est: $$",
+      "reponse": "$$les \\:trois$$",
+      "elements": ["$$reflexive$$", "$$antisymetrique$$", "$$transitive$$", "$$les \\:trois$$"],
+      "type": "qcm",
+      "etat": "unlock"
+    },
+    {
+      "question": "$$la\\: relation\\: de\\: comparaison \\leq est\\: dite\\: reflexive\\: lorsque$$",
+      "reponse": "$$\\forall \\:x \\in \\mathbb{R} \\:, \\:x \\leq \\:x$$",
+      "elements": ["$$\\in$$", "$$\\mathbb{R}$$", "$$\\leq$$", "$$\\:x$$", "$$\\:x$$", "$$\\forall$$", "$$\\:x$$", "$$\\:,$$"],
+      "type": "dnd",
+      "etat": "lock"
+    },
+    {
+      "question": "$$la \\:relation \\:de \\:comparaison \\leq est \\:dite \\:antisymetrique \\:lorsque$$",
+      "reponse": "$$\\forall \\:(x,y) \\in \\mathbb{R^2} \\:, (x \\leq y \\:et y \\leq x) \\Rightarrow x = \\:y$$",
+      "elements": ["$$\\forall$$", "$$\\mathbb{R^2}$$", "$$\\:(x,y)$$", "$$ \\in$$", "$$\\: (x \\leq \\:y$$", "$$\\:et\\:$$", "$$\\:y \\leq x\\:)$$", "$$\\:x$$", "$$\\:y$$", "$$\\Rightarrow$$", "$$\\:,$$", "$$=$$"],
+      "type": "dnd",
+      "etat": "lock"
+    },
+    {
+      "question": "$$La \\:relation \\:de \\:comparaison \\leq \\:est \\:dite \\:transitive \\:quand $$",
+      "reponse": "$$\\forall \\:(x,y,z) \\in \\mathbb{R^3}, (x \\leq y \\:et \\:y \\leq z) \\Rightarrow x \\leq z$$",
+      "elements": ["$$\\forall$$", "$$\\:(x,y,z)$$", "$$\\mathbb{R^3}$$", "$$\\in$$", "$$(x \\leq y$$", "$$\\:et\\:$$", "$$ y \\leq z)\\:$$", "$$\\:x$$", "$$\\:z$$", "$$\\Rightarrow$$", "$$\\leq$$", "$$\\:,$$"],
+      "type": "dnd",
+      "etat": "lock"
+    },
+    {
+      "question": "$$Soient \\:A \\:une \\:partie \\:de \\mathbb{R} \\:et \\:a \\:un \\:element de A. \\:On \\:dit \\:que \\:a \\:est \\:le \\:plus \\:grand \\:element \\:de \\:A \\:si$$",
+      "reponse": "$$\\forall \\:x \\in A, \\:x \\leq a$$",
+      "elements": ["$$\\forall$$", "$$\\:A$$", "$$\\:a$$", "$$\\:x$$", "$$\\in$$", "$$\\:,$$", "$$\\leq$$", "$$\\:x$$"],
+      "type": "dnd",
+      "etat": "lock"
+    },
+    {
+      "question": "$$Soit\\: A \\:un \\:sous \\:ensemble \\:de\\: \\mathbb{R}. \\:Le \\:majorant \\:de \\:A \\:est: $$",
+      "reponse": "$$le \\:plus \\:grand \\:element \\:de \\:A$$",
+      "elements": ["$$le \\:plus \\:grand \\:element \\:de \\:A$$", "$$l'element \\:qui \\:majore \\:l'ensemble \\:A$$"],
+      "type": "qcm",
+      "etat": "lock"
+    },
+    {
+      "question": "$$Etant \\:donne \\:deux \\:reels \\:x \\:et \\:y \\:quelconques \\:et \\:un \\:reel \\:h \\:strictement \\:positif, \\:l'inegalite \\:triangulaire stipule que $$",
+      "reponse": "$$\\mid y - x \\mid \\leq h \\Leftrightarrow x - h \\leq y \\leq x + h$$",
+      "elements": ["$$\\mid$$", "$$\\:y$$", "$$\\:x$$", "$$\\:h$$", "$$\\:x$$", "$$\\:h$$", "$$\\leq$$", "$$\\:y$$", "$$\\:x$$", "$$\\:h$$", "$$\\leq$$", "$$\\Leftrightarrow$$", "$$+$$", "$$-$$", "$$+$$", "$$-$$", "$$\\mid$$", "$$\\leq$$"],
+      "type": "dnd",
+      "etat": "lock"
+    }
+  ]
+  },
+  {
+    "chapitre": "Suites reelles",
+    "contenu": [
+      {
+        "question": "$$Une \\:suite \\:u \\:est \\:qualifiee \\:de \\:stationnaire \\:si$$",
+        "reponse": "$$elle \\:est \\:constante \\:a \\:partir \\:d'un \\:certain \\:rang$$",
+        "elements": ["$$elle \\:est \\:a \\:l'arret$$", "$$elle \\:est \\:constante \\:a \\:partir \\:d'un \\:certain \\:rang$$", "$$elle \\:n'a \\:jamais \\:variee$$", "$$tous \\:ses \\:elements \\:sont \\:stationnaire$$"],
+        "type": "qcm",
+        "etat": "lock"
+      },
+      {
+        "question": "$$Quant \\:est-ce \\:qu'une \\:suite \\:est \\:bornee \\:?$$",
+        "reponse": "$$lorsqu'elle \\:est \\:majoree \\:et \\:minoree$$",
+        "elements": ["$$lorsqu'elle \\:admet \\:deux \\:bornes$$", "$$lorsqu'elle \\:a \\:au \\:moins \\:une \\:borne$$", "$$lorsqu'elle \\:est \\:majoree \\:et \\:minoree$$", "$$aucune \\:reponse$$"],
+        "type": "qcm",
+        "etat": "lock"
+      },
+      {
+        "question": "$$$$",
+        "reponse": "$$$$",
+        "elements": [],
+        "type": "",
+        "etat": "lock"
+      }
+    ]
+  },
+  {
+    "chapitre": "Limites et continuite",
+    "contenu": [
+      {
+        "question": "$$$$",
+        "reponse": "$$$$",
+        "elements": [],
+        "type": "qcm",
+        "etat": "lock"
+      }
+    ]
+  },
+  {
+    "chapitre": "Derivation",
+    "contenu": [
+      {
+        "question": "$$$$",
+        "reponse": "$$$$",
+        "elements": [],
+        "type": "qcm",
+        "etat": "lock"
+      }
+    ]
+  }
+]
